@@ -4,13 +4,6 @@ name: My workflow
 on:
   workflow_dispatch:
 jobs:
-  build:
-    steps:
-      - uses: cloudbees-io/register-build-artifact@v1
-        with:
-          name: art1
-          version: ${{ cloudbees.version }}
-          url: docker.io/my-app/art1::${{ cloudbees.version }}
   deploy:
     steps:
       - uses: cloudbees-io/register-deployed-artifact@v1
@@ -19,7 +12,6 @@ jobs:
           version: ${{ cloudbees.version }}
           url: docker.io/my-app/art1::${{ cloudbees.version }}
           target-environment: test
-    needs: build
   publish-evidence:
     steps:
       - name: publish evidence
