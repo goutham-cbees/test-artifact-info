@@ -10,14 +10,14 @@ jobs:
         with:
           name: art1
           version: ${{ cloudbees.version }}
-          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/actions/assets-findsecbugs-scanner::${{ cloudbees.version }}
+          url: docker.io/my-app/art1::${{ cloudbees.version }}
   deploy:
     steps:
       - uses: cloudbees-io/register-deployed-artifact@v1
         with:
           name: art1
           version: ${{ cloudbees.version }}
-          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/actions/assets-findsecbugs-scanner::${{ cloudbees.version }}
+          url: docker.io/my-app/art1::${{ cloudbees.version }}
           target-environment: test
     needs: build
   publish-evidence:
