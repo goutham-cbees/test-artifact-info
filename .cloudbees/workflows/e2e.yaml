@@ -8,9 +8,9 @@ jobs:
     steps:
       - uses: cloudbees-io/register-deployed-artifact@v1
         with:
-          name: art1
-          version: 0.0.52
-          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/actions/assets-findsecbugs-scanner:0.0.52
+          name: artifact1
+          version: 0.0.41
+          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/actions/assets-findsecbugs-scanner:0.0.41
           target-environment: test
   publish-evidence:
     steps:
