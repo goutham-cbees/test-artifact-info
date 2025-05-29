@@ -11,7 +11,7 @@ jobs:
           name: artifact1
           version: 0.0.41
           url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/actions/assets-findsecbugs-scanner:0.0.41
-          target-environment: Test one
+          target-environment: aspm-qa-test
   publish-evidence:
     steps:
       - name: publish evidence
