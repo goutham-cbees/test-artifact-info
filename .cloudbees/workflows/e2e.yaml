@@ -9,8 +9,8 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v1
         with:
           name: artifact1
-          version: qe-bdgolang
-          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/actions/assets-findsecbugs-scanner:qe-bdgolang
+          version: 0.0.41
+          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/actions/assets-findsecbugs-scanner:0.0.41
           target-environment: aspm-qa-test
   publish-evidence:
     steps:
