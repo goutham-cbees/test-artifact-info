@@ -9,8 +9,8 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v1
         with:
           name: artifact3
-          version: qe-0.3
-          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:qe-0.3
+          version: qe-0.4
+          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:qe-0.4
           target-environment: aspm-qa-test
   publish-evidence:
     steps:
