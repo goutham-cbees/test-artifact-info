@@ -8,9 +8,9 @@ jobs:
     steps:
       - uses: cloudbees-io/register-deployed-artifact@v1
         with:
-          name: artifact1
-          version: 0.0.41
-          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/actions/assets-findsecbugs-scanner:0.0.41
+          name: artifact3
+          version: qe-0.2
+          url: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:qe-0.2
           target-environment: aspm-qa-test
   publish-evidence:
     steps:
